@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Christ Jevicto Ajimas Kirana">
+    <title>pageku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+    <header class="header">
+        <h1>Welcome To My Personal Web Page</h1><br>
+
+    </header>
+    <section id="foto">
+        <aside class="sidebar">
+            <img src="fotodiri.jpg" alt="fotoku"width="200px" alt="foto saya">
+    </section>
+</aside>
+
+    <article class ="tentang-saya">
+        <h2>About Me</h2>
+        <h4>Christ Jevicto Ajimas Kirana</h4>
+        <ul>
+        <li>Akun instagram : @christ.jevicto</li>
+        <li>Kota : Yogyakarta</li>
+        <li>Provinsi : DIY</li>
+        <li>Negara Asal : Indonesia</li>
+    </ul>
+    <h3>Skillset</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>PYTHON</li>
+            <li>C</li>
+        </ol>
+    </article>
+    
+    <button id="tombolGantiWarna">GANTI WARNA</button>
+    <br>
+
+    <footer class="footer">
+        <p>Thank You For Visiting my Personal Web Page.</p>
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['red', 'blue', 'green', 'white'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna')
+        tombolGantiWarna.addEventListener('click', gantiWarnaRandom)
+    </script>
+
+</body>
+</html>
